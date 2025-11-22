@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LGBTQ+ Homepage</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', Arial, sans-serif;
+            background: #f4ecff;
+            color: #333;
+        }
+        header {
+            padding: 30px;
+            text-align: center;
+            background: linear-gradient(90deg,#ff4f81,#ff914d,#ffe24d,#55e66c,#4ccfff,#b36bff);
+            color: white;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 42px;
+            letter-spacing: 2px;
+            text-shadow: 0 3px 5px rgba(0,0,0,0.3);
+        }
+        nav {
+            text-align: center;
+            margin-top: 10px;
+        }
+        nav a {
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 8px 14px;
+            color: #5e2e99;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            background: #e6d6ff;
+            border-radius: 6px;
+        }
+        .hero {
+            width: 100%;
+            padding: 50px 20px;
+            text-align: center;
+            background: #ffffff;
+            margin-top: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .hero h2 {
+            font-size: 32px;
+            color: #7b30c7;
+        }
+        .hero p {
+            font-size: 18px;
+            width: 80%;
+            margin: auto;
+        }
+        .section {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            margin: 20px 0;
+            padding: 18px;
+            border-left: 12px solid #7b30c7;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+            transition: 0.3s ease;
+        }
+        .card:hover {
+            transform: scale(1.03);
+            filter: brightness(1.05);
+        }
+        .card:hover {
+            transform: scale(1.03);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            background:;
+            font-weight: 600;
+        }
+        #team {
+            color: #7b30c7;
+        }
+        .fade {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: 0.8s;
+        }
+        .show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>LGBTQ+</h1>
+<h3><b>THE UNHEARD STORIES AND UNSEEN STRUGLES</b></H3>
+    <nav>
+        <a href="LGBTQ+2.html">History</a>
+<a href="strugles.html">Struggles</a>
+        <a href="SDG10.html">SDG</a>
+        <a href="LGBTQ++.html">Resources</a>
+    </nav>
+</header>
+
+<div class="hero fade">
+    <h2 style="color:#660708;"><u>Understanding Identity With Respect</u></h2>
+    <p><b>Every identity is valid. Every orientation is natural. Explore the beautiful diversity of people and learn why LGBTQ+ identities are an essential part of human nature.</b></p>
+</div>
+
+<div class="section" id="info">
+    <div class="card fade" style="border-left-color:#ff4f4f;">
+        <h2 style="color:#ff4f4f;">👩‍❤‍👩 L - Lesbian</h2>
+        <p><b>Women attracted emotionally or romantically to other women. This has existed naturally across cultures and history.</b></p>
+    </div>
+
+    <div class="card fade" style="border-left-color:#ff914d;">
+        <h2 style="color:#ff914d;">👨‍❤‍👨 G - Gay</h2>
+        <p><b>Men who feel attraction toward other men. It is a natural orientation observed globally for centuries.</b></p>
+    </div>
+
+    <div class="card fade" style="border-left-color:#ffe24d;">
+        <h2 style="color:#ffe24d;">💖 B - Bisexual</h2>
+        <p><b>People attracted to more than one gender. Human emotions and attractions naturally exist on a spectrum.</b></p>
+    </div>
+
+    <div class="card fade" style="border-left-color:#55e66c;">
+        <h2 style="color:#55e66c;">⚧️ T - Transgender</h2>
+        <p><b>People whose gender identity differs from their birth-assigned gender. Identity comes from within; it is not chosen.</b></p>
+    </div>
+
+    <div class="card fade" style="border-left-color:#4ccfff;">
+        <h2 style="color:#4ccfff;">🌈 Q - Queer / Questioning</h2>
+        <p><b>Queer represents fluid identities, while Questioning describes those exploring theirs. Both reflect natural diversity.<b/></p>
+    </div>
+</div>
+
+<footer id="team-section">
+    <p>Team Members: <span id="team"></span></p>
+</footer>
+
+<script>
+    // Team Member Names
+    const teamMembers = ["Tvisha Rajgor", "Raashii Prajapati", "Preetha Pol", "Jinisha Rathod"]; // Replace with your actual names
+    document.getElementById("team").textContent = teamMembers.join(" | ");
+
+    // Fade in on scroll
+    const fades = document.querySelectorAll('.fade');
+
+    const showFade = () => {
+        fades.forEach(el => {
+            const pos = el.getBoundingClientRect().top;
+            if (pos < window.innerHeight - 50) {
+                el.classList.add('show');
+            }
+        });
+    };
+
+    window.addEventListener('scroll', showFade);
+    window.addEventListener('load', showFade);
+</script>
+</body>
+</html>

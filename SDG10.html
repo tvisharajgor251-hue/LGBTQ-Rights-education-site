@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SDG Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4ecff;
+        }
+
+       header {
+            padding: 30px;
+            text-align: center;
+            background: linear-gradient(90deg,#ff4f81,#ff914d,#ffe24d,#55e66c,#4ccfff,#b36bff);
+            color: white;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 42px;
+            letter-spacing: 2px;
+            text-shadow: 0 3px 5px rgba(0,0,0,0.3);
+        }
+        nav {
+            text-align: center;
+            margin-top: 10px;
+        }
+        nav a {
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 8px 14px;
+            color: #5e2e99;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            background: #e6d6ff;
+            border-radius: 6px;
+        }
+
+        header:hover {
+            letter-spacing: 2px;
+            cursor: pointer;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            background: #ffffff;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        h1 { font-size: 36px;
+        color:black; }
+        h2 {
+            font-size: 28px;
+            color: #444;
+            transition: 0.3s;
+        }
+        h2:hover {
+            color: #1f8ceb;
+            transform: translateX(5px);
+            cursor: pointer;
+        }
+
+        h3 {
+            font-size: 22px;
+            color: #333;
+            transition: 0.3s;
+        }
+        h3:hover {
+            color: #0c7a3d;
+            transform: translateX(5px);
+        }
+
+        p {
+            color: black;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .sdg-box {
+            background: #faf0f9;
+            padding: 20px;
+            margin-top: 10px;
+            border-radius: 8px;
+            transition: 0.3s ease-in-out;
+            font-size: 18px;
+        }
+
+        .sdg-box:hover {
+            background: #edfafa;
+            transform: scale(1.02);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: linear-gradient(to bottom, #5bcefa,#ffffff, #f5a9b8);
+            color: white;
+            margin-top: 20px;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        footer:hover {
+            letter-spacing: 2px;
+            cursor: pointer;
+        }
+
+        .sdg-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .sdg-card {
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: bold;
+            color: white;
+            transition: 0.3s ease-in-out;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 120px;
+        }
+
+        .sdg-card span {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .sdg-card:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+        }
+
+        .sdg-1 { background: #e5243b; }
+        .sdg-2 { background: #dda63a; }
+        .sdg-3 { background: #4c9f38; }
+        .sdg-4 { background: #c5192d; }
+        .sdg-5 { background: #ff3a21; }
+        .sdg-6 { background: #26bde2; }
+        .sdg-7 { background: #fcc30b; }
+        .sdg-8 { background: #a21942; }
+        .sdg-9 { background: #fd6925; }
+        .sdg-10 { background: #dd1367; }
+        .sdg-11 { background: #fd9d24; }
+        .sdg-12 { background: #bf8b2e; }
+        .sdg-13 { background: #3f7e44; }
+        .sdg-14 { background: #0a97d9; }
+        .sdg-15 { background: #56c02b; }
+        .sdg-16 { background: #00689d; }
+        .sdg-17 { background: #19486a; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="color:white;">Sustainable Development Goals</h1>
+ <nav>
+        <a href="LGBTQ+ homepage.html">Home</a>
+        <a href="LGBTQ+2.html">History</a>
+<a href="strugles.html">Struggles</a>
+        <a href="LGBTQ++.html">Resources</a>
+    </nav>
+
+    </header>
+
+    <div class="container">
+        <h2>What Are SDGs?</h2>
+        <p>The Sustainable Development Goals are a set of 17 global goals created by the United Nations to help improve the world by 2030.</p>
+
+        <div class="sdg-box">
+            <h3>The 17 Sustainable Development Goals (SDGs)</h3>
+            <div class="sdg-grid">
+                <div class="sdg-card sdg-1"><span>1</span>No Poverty</div>
+                <div class="sdg-card sdg-2"><span>2</span>Zero Hunger</div>
+                <div class="sdg-card sdg-3"><span>3</span>Good Health</div>
+                <div class="sdg-card sdg-4"><span>4</span>Quality Education</div>
+                <div class="sdg-card sdg-5"><span>5</span>Gender Equality</div>
+                <div class="sdg-card sdg-6"><span>6</span>Clean Water</div>
+                <div class="sdg-card sdg-7"><span>7</span>Clean Energy</div>
+                <div class="sdg-card sdg-8"><span>8</span>Decent Work</div>
+                <div class="sdg-card sdg-9"><span>9</span>Industry & Innovation</div>
+                <div class="sdg-card sdg-10"><span>10</span>Reduced Inequalities</div>
+                <div class="sdg-card sdg-11"><span>11</span>Sustainable Cities</div>
+                <div class="sdg-card sdg-12"><span>12</span>Responsible Production</div>
+                <div class="sdg-card sdg-13"><span>13</span>Climate Action</div>
+                <div class="sdg-card sdg-14"><span>14</span>Life Below Water</div>
+                <div class="sdg-card sdg-15"><span>15</span>Life on Land</div>
+                <div class="sdg-card sdg-16"><span>16</span>Peace & Justice</div>
+                <div class="sdg-card sdg-17"><span>17</span>Partnerships</div>
+            </div>
+        </div>
+
+        <h2>SDG 10: Reduced Inequalities</h2>
+        <div class="sdg-box">
+            <h3>Key aspects of SDG 10</h3>
+           <ul>
+              <li>  Income inequality: Targets include ensuring the incomes of the bottom 40% of the population grow faster than the national average.</li>
+            <li>    Discrimination: It calls for eliminating discriminatory laws, policies, and practices based on factors like gender, disability, race, or religion.</li>
+                <li>Migration: Aims to facilitate orderly, safe, and regular migration through planned policies and to reduce remittance costs.</li>
+              <li>  Political and economic inclusion: Seeks to increase the political and economic representation of all people, especially marginalized groups.</li>
+               <li> Social protection: Encourages the adoption and implementation of social protection policies to support vulnerable populations.</li>
+                <li>International cooperation: Addresses inequality between countries through fair representation and development assistance.</li>
+            </ul>
+        </div>
+
+        <h2>Why SDGs Matter</h2>
+        <p>SDGs help guide countries toward a better, safer, and more sustainable future. They focus on reducing poverty, protecting the planet, and improving the lives of people everywhere.</p>
+    </div>
+
+   
+</body>
+</html>
